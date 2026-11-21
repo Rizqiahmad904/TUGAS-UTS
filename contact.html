@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Rizqi Ahmad</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                Rizqi Ahmad
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Buka menu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <ul class="navbar-nav align-items-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="contact.html">Contact</a>
+                    </li>
+
+                    <!-- Tombol Dark Mode -->
+                    <li class="nav-item ms-3">
+                        <button id="darkModeToggle"
+                                class="btn btn-outline-secondary btn-sm"
+                                aria-label="Ganti mode gelap/terang">
+
+                            <i class="bi bi-moon-fill"></i>
+
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Contact Form Section -->
+    <section class="pt-5 mt-5 pb-5 flex-grow-1">
+
+        <div class="container mt-4">
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-8 col-lg-6">
+
+                    <h2 class="fw-normal mb-4 text-center text-md-start">
+                        Hubungi aku
+                    </h2>
+
+
+                    <!-- Notifikasi Berhasil -->
+                    <div id="formSuccess"
+                         class="alert alert-success d-none"
+                         role="alert">
+
+                        Pesan berhasil divalidasi! Terima kasih sudah menghubungi saya.
+
+                    </div>
+
+
+                    <!-- Contact Form -->
+                    <form id="contactForm" class="mt-4">
+
+                        <!-- Input Nama -->
+                        <div class="mb-4">
+
+                            <label for="name" class="form-label">
+                                Nama
+                            </label>
+
+                            <input type="text"
+                                   class="form-control rounded-0 border-dark"
+                                   id="name"
+                                   style="height: 40px;"
+                                   required>
+
+                            <small id="nameError" class="text-danger"></small>
+
+                        </div>
+
+
+                        <!-- Input Email -->
+                        <div class="mb-4">
+
+                            <label for="email" class="form-label">
+                                Email
+                            </label>
+
+                            <input type="email"
+                                   class="form-control rounded-0 border-dark"
+                                   id="email"
+                                   style="height: 40px;"
+                                   required>
+
+                            <small id="emailError" class="text-danger"></small>
+
+                        </div>
+
+
+                        <!-- Input Pesan -->
+                        <div class="mb-4">
+
+                            <label for="message" class="form-label">
+                                Pesan
+                            </label>
+
+                            <textarea class="form-control rounded-0 border-dark"
+                                      id="message"
+                                      rows="6"
+                                      required></textarea>
+
+                            <small id="messageError" class="text-danger"></small>
+
+                        </div>
+
+
+                        <!-- Tombol Kirim -->
+                        <div class="text-center text-md-start">
+
+                            <button type="submit"
+                                    class="btn btn-outline-dark rounded-0 px-5 py-2">
+
+                                KIRIM
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-4 custom-footer mt-auto">
+
+        <div class="container text-center">
+
+            <p class="mb-2" style="font-size: 0.9rem;">
+                Copyright &copy; 2026 Rizqi Ahmad. All Rights Reserved
+            </p>
+
+            <div>
+
+                <a href="#"
+                   class="me-2 fs-5"
+                   aria-label="LinkedIn">
+
+                    <i class="bi bi-linkedin"></i>
+
+                </a>
+
+                <a href="#"
+                   class="fs-5"
+                   aria-label="Email">
+
+                    <i class="bi bi-envelope"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

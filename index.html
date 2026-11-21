@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Rizqi Ahmad</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Rizqi Ahmad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Buka menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <!-- Fitur Toggle Dark Mode -->
+                    <li class="nav-item ms-3">
+                        <button id="darkModeToggle" class="btn btn-outline-secondary btn-sm" aria-label="Ganti mode gelap/terang">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main style="margin-top: 100px;">
+    <!-- Bagian Hero -->
+    <section class="container text-center py-4">
+        <img src="img/profile.jpg" alt="Foto Rizqi Ahmad" class="hero-img mb-3 shadow-sm">
+
+        <!-- JS Feature 1: Greeting Dinamis (Salam Otomatis) -->
+        <h2 id="greeting" class="fw-bold mt-3">Halo, Saya Rizqi Ahmad</h2>
+
+        <div class="line-separator my-4">
+            <i class="bi bi-star-fill star-icon"></i>
+        </div>
+
+        
+<p class="text-muted mx-auto" style="max-width: 450px;">
+    Mahasiswa teknik informatika yang<br>
+    sedang mencoba untuk menjadi<br>
+    pribadi yang lebih baik
+    <br>(Aku sudah IMO)
+</p>
+
+<!-- Tombol Lihat Projek -->
+<div class="mt-4">
+    <a href="projects.html" class="btn btn-dark px-4 py-2">
+        Lihat Projek
+        <i class="bi bi-arrow-right ms-2"></i>
+    </a>
+</div>
+
+    </section>
+
+    <!-- Bagian Tentang Saya -->
+    <section class="container py-5">
+        <h3 class="text-center fw-bold mb-5">TENTANG SAYA</h3>
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h5 class="fw-bold mb-4">Pendidikan</h5>
+
+                <!-- Menggunakan tag <article> sesuai aturan semantik UTS -->
+                <article class="row mb-4 align-items-center">
+                    <div class="col-md-4">
+                        <img src="img/sma.jpg" alt="Suasana SMA PGRI 31 Pangalengan" class="img-fluid rounded border">
+                    </div>
+                    <div class="col-md-8 about-text">
+                        <p class="mb-0">Sebagai alumni SMA PGRI 31 Pangalengan jurusan IPS, saya memiliki ketertarikan yang besar terhadap ilmu sosial dan interaksi antarmanusia. Pengalaman belajar di jurusan IPS membantu saya memahami cara kerja lingkungan masyarakat, berpikir kritis dalam melihat fenomena sosial, serta mengasah empati dalam berkomunikasi dengan orang lain.</p>
+                    </div>
+                </article>
+
+                <article class="row mb-5 align-items-center">
+                    <div class="col-md-4">
+                        <img src="img/stt.jpg" alt="Suasana Kelas STT Pratama Adi" class="img-fluid rounded border">
+                    </div>
+                    <div class="col-md-8 about-text">
+                        <p class="mb-0">Mahasiswa Teknik Informatika STT Pratama Adi yang memadukan keahlian teknis pemrograman dengan pemahaman dinamika sosial. Berfokus pada pengembangan solusi digital yang <i>user-centric</i>, dibekali logika berpikir analitis, kemampuan beradaptasi, serta kepekaan komunikasi yang kuat.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Skills -->
+    <section class="container py-5">
+        <h3 class="text-center fw-bold">SKILLS KU</h3>
+        <div class="line-separator my-4 mb-5">
+            <i class="bi bi-star-fill star-icon"></i>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <!-- JS Feature 2: Skills di-render dinamis sebagai List (<ul>) melalui DOM API -->
+                <ul id="skillsContainer" class="list-unstyled">
+                    <!-- Konten akan diisi oleh JavaScript -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center text-muted">
+                <p>Mahasiswa Teknik Informatika STT Pratama Adi yang berfokus pada pengembangan web terstruktur. Saat ini aktif memperdalam HTML, CSS, dan JavaScript untuk membangun antarmuka web yang interaktif. Berbekal minat pada ilmu sosial, saya mengedepankan pendekatan user-centric agar setiap solusi digital yang dibangun mudah dipahami dan nyaman digunakan oleh pengguna.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-light py-4 text-center custom-footer mt-5">
+    <div class="container">
+        <p class="mb-2">Copyright &copy; 2026 Rizqi Ahmad. All Rights Reserved</p>
+        <div class="d-flex justify-content-center gap-3 fs-5 mt-2">
+            <a href="#" class="text-dark" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-dark" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
